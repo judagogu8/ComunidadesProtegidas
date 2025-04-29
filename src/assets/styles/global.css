@@ -1,0 +1,60 @@
+/* Variables globales */
+:root {
+  --primary-color: #d93232;
+  --secondary-color: #2c3e50;
+  --accent-color: #3498db;
+  --text-color: #333;
+  --light-gray: #f5f5f5;
+  --medium-gray: #e0e0e0;
+  --dark-gray: #777;
+  --white: #ffffff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+  --border-radius: 8px;
+}
+
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--light-gray);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0; 
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+}
+
+/* Contenedor genérico para secciones */
+.section-container {
+  max-width: 1200px; /* Limita el ancho máximo para pantallas grandes */
+  margin: 0 auto; /* Centra el contenedor */
+  padding: 3rem 5%; /* Mantiene el padding */
+  width: 100%; /* Ocupa todo el ancho disponible hasta el max-width */
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: 2rem 3%; /* Reduce el padding en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-container {
+    padding: 1.5rem 3%; /* Reduce aún más el padding en pantallas pequeñas */
+  }
+}

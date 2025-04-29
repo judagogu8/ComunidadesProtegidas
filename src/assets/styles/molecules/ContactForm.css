@@ -1,0 +1,40 @@
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: left;
+  }
+  
+  .contact-form h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+  }
+  
+  @media (max-width: 480px) {
+    .contact-form {
+      padding: 1.5rem;
+    }
+  
+    .contact-form h3 {
+      font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+    }
+  
+    .form-group label {
+      font-size: clamp(0.8rem, 2vw, 0.9rem);
+    }
+  }

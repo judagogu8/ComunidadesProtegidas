@@ -1,0 +1,79 @@
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .feature-alert-icon,
+  .feature-community-icon,
+  .feature-app-icon,
+  .feature-authorities-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .feature-alert-icon::before {
+    content: '!';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .feature-community-icon::before {
+    content: '👥';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+  }
+  
+  .feature-app-icon::before {
+    content: '📱';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+  }
+  
+  .feature-authorities-icon::before {
+    content: '🔔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+  }
+  
+  @media (max-width: 480px) {
+    .feature-icon,
+    .feature-alert-icon,
+    .feature-community-icon,
+    .feature-app-icon,
+    .feature-authorities-icon {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .feature-alert-icon::before {
+      font-size: 30px;
+    }
+  
+    .feature-community-icon::before,
+    .feature-app-icon::before,
+    .feature-authorities-icon::before {
+      font-size: 26px;
+    }
+  }

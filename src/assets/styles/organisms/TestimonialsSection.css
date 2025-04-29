@@ -1,0 +1,12 @@
+.testimonials-section {
+    background-color: var(--white);
+    text-align: center;
+  }
+  
+  .testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }

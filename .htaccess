@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # No afectar /admin (lo manejamos con CodeIgniter)
+  RewriteCond %{REQUEST_URI} !^/admin
+
+  # Redirigir todas las demás rutas a index.html (React Router)
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
